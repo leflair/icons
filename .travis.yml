@@ -1,24 +1,15 @@
 language: node_js
+
 node_js:
     - 9
-install:
-    - yarn
-cache:
-    yarn: true
-    directories:
-        - node_modules
-script:
-    - 'yarn build'
-deploy:
+
+    deploy:
     provider: npm
-    email: hello@gorillab.co
+    email: admin@leflair.vn
     api_key: $NPM_AUTH_TOKEN
-    skip_cleanup: true
     on:
         branch: master
         tags: true
-notifications:
+
+        notifications:
     email: false
-    slack:
-        secure: Qyekjjt1BaavKfjNi6c4UF1qxR+T/hMOJ8bzhDbAFf+yqxagLGcCGKVX0e9f1bc8JUaY3/7qWf/4cPMBX2tE7cL157wgN1lE2Tgx2ErHAzHXAtszgU7V3B9D2a/2fMcWDMsXkobB286R/0zAjy5lQYbuMTQJDSl1p/OfO0OjcajHpqztx0UVTPURhPDHHOynnASO1dJGJuOplqNvQPpypat3bMLvMWkqOcrF45eKC+Z5K1z/L3mSIIMGpfW8Lk3xKHtYnrb6imE8eCzcu/k9SAaTM/kXiauWw1hz5NZndBsenuT8HUhcXIrM6vTe8TV+m5Tm3k0HlzCEhOdxf5Rvr+YTS1OF96OJ/9E+xQQ/8m9NHOfbEzitQ+DTo6XsqS2ADeFukAv12HGe63vtIREhcKv/zCzdCGKw9QeIs3RR++WHRZgk6DLncAk6Ql9OF+Y4kr7cPZ0UBxj0hAw+yijDSXsCQlWEBWjH+/ZF1nJrDBHCowBHd4FBzWVr6kgMJH1EcJ3IIPBkFKv31uxdmemyIPAwhw1qQ3C1IMRPD3BY19PnrM389wYe3+bVy5A0cdIWDc+syt/uhRRls2GEEzbM0urn61ST6JG9Jy7rov0oS8+kBPpgy+v6kGXXTFt+MIGe+6MBh5HmDgqEoK9N3iYOIa7GFSDNpgeLK3qQL0R1DWA=
-        on_pull_requests: false
