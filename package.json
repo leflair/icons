@@ -1,0 +1,28 @@
+{
+  "name": "@leflair/icons",
+  "version": "1.0.0",
+  "description": "The leflair icons.",
+  "author": {
+    "name": "Leflair",
+    "website": "https://www.leflair.vn/"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leflair/icons.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "src/sprite.scss",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leflair/icons/issues"
+  },
+  "homepage": "https://github.com/leflair/icons#readme"
+}
