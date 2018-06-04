@@ -1,5 +1,4 @@
 language: node_js
-
 node_js:
     - 9
 branches:
@@ -10,9 +9,9 @@ deploy:
     provider: npm
     email: admin@leflair.vn
     api_key: $NPM_AUTH_TOKEN
+    skip_cleanup: true
     on:
         branch: master
-        all_branches: true
         tags: true
 notifications:
     email: false

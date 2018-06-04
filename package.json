@@ -16,9 +16,6 @@
     "type": "git",
     "url": "git+https://github.com/leflair/icons.git"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\""
-  },
   "main": "src/sprite.scss",
   "license": "ISC",
   "bugs": {
