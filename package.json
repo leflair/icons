@@ -19,7 +19,6 @@
   "scripts": {
     "test": "echo \"Done.\""
   },
-  "main": "src/sprite.scss",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/leflair/icons/issues"
