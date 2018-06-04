@@ -2,12 +2,17 @@ language: node_js
 
 node_js:
     - 9
+branches:
+  only:
+  - development
+  - master
 deploy:
     provider: npm
     email: admin@leflair.vn
     api_key: $NPM_AUTH_TOKEN
     on:
         branch: master
+        all_branches: true
         tags: true
 notifications:
     email: false
